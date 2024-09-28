@@ -5,7 +5,9 @@ const Footer = () => {
     return (
         <footer className="bg-light text-center py-4">
             <div className="container">
-                <p className="d-inline">Suyo© 2024</p>
+                <p className="d-inline"> Suyo© 2024 </p>
+                <span className="mx-2"> | </span>
+                <p className="d-inline"> Quick Links: </p>
                 <span className="mx-2">·</span>
                 <ul className="list-inline d-inline">
                     <li className="list-inline-item"><a href="https://suyoatucl.github.io/PIC">Pollution is Colonialism (Game)</a></li>

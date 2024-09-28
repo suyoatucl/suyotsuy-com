@@ -24,23 +24,25 @@ const Header = () => {
                             <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="/pages/about.html" id="aboutDropdown" role="button" data-toggle="dropdown">
+                            {/* Main item link for About Me */}
+                            <Link className="nav-link dropdown-toggle" to="/about" id="aboutDropdown" role="button" data-toggle="dropdown">
                                 About Me
-                            </a>
+                            </Link>
                             <div className="dropdown-menu">
-                                <Link className="dropdown-item" to="#who-am-i">Who am I?</Link>
-                                <Link className="dropdown-item" to="#skills">Skills and Interests</Link>
-                                <Link className="dropdown-item" to="/sections/cv.html">My Curriculum Vitae</Link>
+                                <Link className="dropdown-item" to="/about/WhoAmI">Who am I?</Link>
+                                <Link className="dropdown-item" to="/about/Skills">Skills and Interests</Link>
+                                <Link className="dropdown-item" to="/about/CV">My Curriculum Vitae</Link>
                             </div>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="/pages/works.html" id="worksDropdown" role="button" data-toggle="dropdown">
+                            {/* Main item link for My Works */}
+                            <Link className="nav-link dropdown-toggle" to="/works" id="worksDropdown" role="button" data-toggle="dropdown">
                                 My Works
-                            </a>
+                            </Link>
                             <div className="dropdown-menu">
-                                <Link className="dropdown-item" to="#collaborative">Collaborative Projects</Link>
-                                <Link className="dropdown-item" to="#independent">Independent Works</Link>
-                                <Link className="dropdown-item" to="#research">Research</Link>
+                                <Link className="dropdown-item" to="/works/Collaborative">Collaborative Projects</Link>
+                                <Link className="dropdown-item" to="/works/Independent">Independent Works</Link>
+                                <Link className="dropdown-item" to="/works/Research">Research</Link>
                             </div>
                         </li>
                         <li className="nav-item">
@@ -52,9 +54,9 @@ const Header = () => {
                     </ul>
 
                     {/* Right-aligned Search and Icons */}
-                    <form className="form-inline my-2 my-lg-0" style={{ marginLeft: '250px', width: '350px' }} >
+                    <form className="form-inline my-2 my-lg-0" style={{ marginLeft: '250px', width: '370px' }} >
                         <div className="input-group">
-                            <input className="form-control" type="search" placeholder="Search anything within my website" aria-label="Search" />
+                            <input className="form-control" type="search" placeholder="Search anything within my website ..." aria-label="Search" />
                             <div className="input-group-append">
                                 <span className="input-group-text"><i className="bi bi-search"></i></span>
                             </div>
@@ -62,7 +64,7 @@ const Header = () => {
                     </form>
                     <ul className="navbar-nav">
                         <li className="nav-item" style={{ marginLeft: '20px' }} >
-                            <a className="nav-link" href="/sections/cv.html"><i className="bi bi-file-earmark-person"></i></a>
+                            <Link className="nav-link" to="/about/CV"><i className="bi bi-file-earmark-person"></i></Link>
                         </li>
                         <li className="nav-item" style={{ marginLeft: '10px' }} >
                             <a className="nav-link" href="https://github.com/suyoatucl" target="_blank"><i className="bi bi-github"></i></a>
