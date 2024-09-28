@@ -2,7 +2,7 @@
   "name": "suyotsuy-com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://suyotsuy.com/",
+  "homepage": "https://suyotsuy.com",
   "dependencies": {
     "@floating-ui/react": "^0.26.24",
     "@popperjs/core": "^2.11.8",
